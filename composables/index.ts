@@ -1,5 +1,5 @@
 // Enables auto import for this export
-export { useCards } from './cards/useCards.ts'
-export { useAtk } from './cards/useAtk.ts'
-export { useDef } from './cards/useDef.ts'
-export { useSup } from './cards/useSup.ts'
+export { useDeck } from './deck/useDeck'
+export { useAtk } from './deck/useAtk'
+export { useDef } from './deck/useDef'
+export { useSup } from './deck/useSup'
