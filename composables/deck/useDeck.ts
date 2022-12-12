@@ -5,10 +5,10 @@ export const useDeck = () => {
 
   const allDeck: Deck = Object.assign({}, atkDeck, defDeck, supDeck);
 
-  console.log(atkDeck);
-  console.log(defDeck);
-  console.log(supDeck);
-  console.log(allDeck);
+  // console.log(atkDeck);
+  // console.log(defDeck);
+  // console.log(supDeck);
+  // console.log(allDeck);
 
   return allDeck;
 };

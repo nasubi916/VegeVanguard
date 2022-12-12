@@ -16,4 +16,5 @@
 <script setup lang="ts">
 const hello = useTest();
 const cardList = useDeck();
+console.log(cardList);
 </script>
