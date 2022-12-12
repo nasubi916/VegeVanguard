@@ -1,9 +1,9 @@
 export const useDeck = () => {
-  const atkDeck: Deck = useAtk();
-  const defDeck: Deck = useDef();
-  const supDeck: Deck = useSup();
+  const atkDeck: Deck[] = useAtk();
+  const defDeck: Deck[] = useDef();
+  const supDeck: Deck[] = useSup();
 
-  const allDeck: Deck = Object.assign({}, atkDeck, defDeck, supDeck);
+  const allDeck: Deck[] = atkDeck.concat(defDeck, supDeck);
 
   // console.log(atkDeck);
   // console.log(defDeck);
