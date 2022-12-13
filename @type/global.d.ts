@@ -5,5 +5,3 @@ type Card = {
   special?: any; //!後で変更する
   hungry: number;
 };
-
-type Hand=[Card];
