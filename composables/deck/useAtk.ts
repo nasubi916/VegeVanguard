@@ -1,5 +1,5 @@
 export const useAtk = () => {
-  const atkDeck: Deck[] = [
+  const atkDeck: Card[] = [
     {
       name: "肉",
       atk: 0,

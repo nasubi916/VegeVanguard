@@ -1,5 +1,5 @@
 export const useDef = () => {
-  const defDeck: Deck[] = [
+  const defDeck: Card[] = [
     {
       name: "牛乳",
       def: 0,

@@ -1,5 +1,5 @@
 export const useSup = () => {
-  const supDeck: Deck[] = [
+  const supDeck: Card[] = [
     {
       name: "いちご",
       special: 0,
