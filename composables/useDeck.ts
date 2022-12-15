@@ -17,7 +17,7 @@ export const defDeck: Card[] = [
 export const supDeck: Card[] = [
     {
       name: "いちご",
-      special: 0,
+      special:()=>useDraw(),//?関数の呼び出し とりあえずカード一枚引く
       hungry: 0,
     },
   ];

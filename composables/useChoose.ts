@@ -1,4 +1,4 @@
-export const isChoose = ref(true);
+export const isChoose = ref(false);
 
 export function change() {
     isChoose.value = !isChoose.value;
