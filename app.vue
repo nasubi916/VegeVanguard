@@ -1,7 +1,8 @@
 <template>
   <div>
-    <Test/>
+    <Deck/>
     <Hand/>
     <Turn/>
+    <Status/>
   </div>
 </template>
