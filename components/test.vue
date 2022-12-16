@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h1>Test.vue</h1>
         VegeVanguard!!<br>
         オブジェクト配列による山札の作成:{{ allDeck }}<br>
         見やすい山札:

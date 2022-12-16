@@ -2,5 +2,6 @@
   <div>
     <Test/>
     <Hand/>
+    <Turn/>
   </div>
 </template>
