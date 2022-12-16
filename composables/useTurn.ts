@@ -5,20 +5,13 @@ export const rdyA = ref(false);
 export const rdyB = ref(false);
 
 export const btnA = () => {
-  if (rdyA.value) {
-    rdyA.value = false;
-  } else {
-    rdyA.value = true;
-  }
+  //if文の省略 三項演算子
+  rdyA.value ? (rdyA.value = false) : (rdyA.value = true);
   both();
 };
 
 export const btnB = () => {
-  if (rdyB.value) {
-    rdyB.value = false;
-  } else {
-    rdyB.value = true;
-  }
+  rdyB.value ? (rdyB.value = false) : (rdyB.value = true);
   both();
 };
 

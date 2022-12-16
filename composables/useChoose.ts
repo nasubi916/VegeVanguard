@@ -1,5 +1,3 @@
 export const isChoose = ref(false);
 
-export function change() {
-    isChoose.value = !isChoose.value;
-}
+export const change = () => (isChoose.value = !isChoose.value);
