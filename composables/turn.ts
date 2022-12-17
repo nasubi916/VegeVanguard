@@ -20,6 +20,7 @@ export const turnEnd = () => {
   if (endA.value && endB.value) {
     turnCount();
     turnHungry();
+    checkHP();
   }
 };
 
