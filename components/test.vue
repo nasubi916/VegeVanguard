@@ -1,15 +1,21 @@
 <template>
 	<div>
 		<h1>test.vue</h1>
-		{{ }}
-		<button @click="test">test</button>
+		{{ lists }}<br />
+		{{ copyLists }}
+		<button @click="() => test">test</button>
 		<br />
 		-------------------------------
 	</div>
 </template>
 <script setup lang="ts">
-function test() {
-	const handCopy = [...hand, allDeck[Math.floor(Math.random() * allDeck.length)]]
-	console.log(...handCopy);
+import _ from 'lodash'
+let lists = [{ 'key1': 'value1', 'key2': 'value2' }, { 'key1': 'value3', 'key2': undefined }]
+let copyLists:any;
+const test = () => {
+	copyLists = _.cloneDeep(lists)
+
+	console.log({ lists })
+	console.log({ copyLists })
 }
 </script>

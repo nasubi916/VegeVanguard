@@ -32,5 +32,5 @@ export const turnCount=()=>{
 }
 
 export const badDec=()=>{
-  hand.forEach((bad,index)=>{hand[index].bad--})
+  hand.forEach((_,index)=>{hand[index].bad--})
 }

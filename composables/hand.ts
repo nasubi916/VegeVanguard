@@ -1,7 +1,9 @@
-export const hand: Card[] = reactive([]);
+import _ from 'lodash'
+export let hand: Card[] = reactive([]);
 
 export const draw = () => {
-  // push unshift concat ...hand(スプレッド)
+  // push unshift concat hand=...hand(スプレッド)代入
+	//allDeck[Math.floor(Math.random() * allDeck.length)]
   hand.push(allDeck[Math.floor(Math.random() * allDeck.length)]);
   hand.splice(14);
 };
