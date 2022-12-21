@@ -7,7 +7,7 @@
         <div v-for="card in allDeck">
             <ul>
                 <li>
-                    name:{{ card.name }} {{ 'atk:' + card.atk }} {{ 'def:' + card.def }} 満腹度: {{ card.hungry }}
+                    name:{{ card.name }} {{ 'atk:' + card.atk }} {{ 'def:' + card.def }} 満腹度: {{ card.hungry }} 腐り値:{{ card.bad }}
                 </li>
             </ul>
         </div>

@@ -4,6 +4,7 @@ type Card = {
   def?: number;
   special?: any; //!後で変更する
   hungry: number;
+  bad:number;
 };
 
 type status={
@@ -11,4 +12,5 @@ type status={
   hungry:number;
   atk:number;
   def:number;
+  energy:number;
 }

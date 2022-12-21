@@ -1,20 +1,16 @@
 export const hand: Card[] = reactive([]);
 
 export const draw = () => {
+  // push unshift concat ...hand(スプレッド)
   hand.push(allDeck[Math.floor(Math.random() * allDeck.length)]);
   hand.splice(14);
 };
 
-export const set = () => {
-  for (let i = 0; i < 7; i++) draw();
-};
+export const set = () => [...Array(7)].map(() => draw());
 
 export const isChoose = ref(false);
 // isChoose.value = !isChoose.value;
-type change={
-	//!改善予定
-  [index:number]:void;
-}
+
 export const change= {
 	"1":function(index:number){hand.splice(index);},
 	"2":function(index:number){hand.splice(index);},

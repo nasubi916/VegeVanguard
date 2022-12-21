@@ -21,6 +21,7 @@ export const turnEnd = () => {
     turnCount();
     turnHungry();
     checkHP();
+    badDec();
   }
 };
 
@@ -28,4 +29,8 @@ export const turnCount=()=>{
   turn.value++;
   endA.value = false;
   endB.value = false;
+}
+
+export const badDec=()=>{
+  hand.forEach((bad,index)=>{hand[index].bad--})
 }

@@ -3,6 +3,7 @@ export const status: status = reactive({
 	hungry: 0,
 	atk: 0,
 	def: 0,
+	energy:0,
 })
 
 //仮で作成したCalc.tsで呼び出す予定
